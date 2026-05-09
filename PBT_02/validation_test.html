@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Test - A2</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 600px; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; }
+        button { padding: 10px 20px; margin: 10px 5px; }
+    </style>
+</head>
+<body>
+    <h1>Validation Test - Câu A2</h1>
+    <form action="#" method="POST">
+        
+        <label for="test1">1. Input required (để trống):</label>
+        <input type="text" id="test1" required value="">
+
+        <label for="test2">2. Input email (nhập "abc"):</label>
+        <input type="email" id="test2" value="abc">
+
+        <label for="test3">3. Input number (min=1, max=10, nhập 15):</label>
+        <input type="number" id="test3" min="1" max="10" value="15">
+
+        <label for="test4">4. Input pattern 10 số (nhập "abc123"):</label>
+        <input type="text" id="test4" pattern="[0-9]{10}" value="abc123">
+
+        <label for="test5">5. Password minlength=8 (nhập "123"):</label>
+        <input type="password" id="test5" minlength="8" value="123">
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

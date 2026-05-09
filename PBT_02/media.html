@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Sản phẩm</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        img { max-width: 100%; height: auto; display: block; margin: 20px 0; }
+        figure { margin: 25px 0; }
+        iframe { border: none; } /* Thay thế cho frameborder */
+    </style>
+</head>
+<body>
+    <h1>iPhone 16 Pro Max</h1>
+
+    <!-- Figure + Images -->
+    <figure>
+        <img src="https://picsum.photos/id/1015/800/500" alt="iPhone 16 Pro Max Titan Desert" loading="lazy">
+        <figcaption>iPhone 16 Pro Max Titan Desert - 25.990.000đ</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://picsum.photos/id/201/800/500" alt="iPhone 16 Pro Max màu đen mặt sau" loading="lazy">
+        <figcaption>Thiết kế titan cao cấp</figcaption>
+    </figure>
+
+    <!-- YouTube iframe (đã sửa frameborder) -->
+    <h2>Video giới thiệu</h2>
+    <iframe width="800" height="450" 
+            src="https://www.youtube.com/embed/9Yp4oZJ4z5w" 
+            title="iPhone 16 Pro Max" 
+            allowfullscreen
+            style="border: none;">
+    </iframe>
+
+    <!-- Native Video -->
+    <h2>Video sản phẩm (native)</h2>
+    <video controls poster="https://picsum.photos/id/1015/800/500" width="800">
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm">
+        Trình duyệt không hỗ trợ video.
+    </video>
+
+    <!-- Audio -->
+    <h2>Nhạc nền</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Trình duyệt không hỗ trợ audio.
+    </audio>
+
+    <h2>Logo SVG</h2>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" fill="#0071e3"/>
+        <text x="100" y="115" font-size="65" text-anchor="middle" fill="white" font-family="Arial">A</text>
+    </svg>
+
+</body>
+</html>
