@@ -131,3 +131,4 @@ Thứ hai, về Accessibility, các công cụ hỗ trợ người khuyết tậ
 Ví dụ thực tế: một trang sản phẩm dùng <article> cho mỗi sản phẩm sẽ giúp Google hiểu mỗi sản phẩm là một thực thể độc lập, tăng khả năng hiển thị rich snippet.
 
 Tuy nhiên, <div> vẫn phù hợp trong các trường hợp layout thuần túy như container, wrapper hoặc animation box, nơi không mang ý nghĩa nội dung.
+    
