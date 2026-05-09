@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Nguyễn Vũ Phúc An</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            background-color: #f5f7fb;
+            color: #1e293b;
+            padding: 2rem 1rem;
+        }
+        header, main, footer {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+        }
+        header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        main {
+            margin-bottom: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            color: #475569;
+            background-color: #f1f5f9;
+        }
+        nav {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+        }
+        article {
+            background: #fefefe;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -12px rgba(0,0,0,0.15);
+        }
+        figure {
+            margin: 0 0 0.8rem 0;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 0.8rem;
+            object-fit: cover;
+        }
+        figcaption {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-top: 0.4rem;
+        }
+        article h3 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+            color: #0f172a;
+        }
+        article p {
+            color: #334155;
+            margin-bottom: 0.75rem;
+        }
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #dc2626;
+            margin: 0.5rem 0;
+        }
+        .buy-link {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            transition: background 0.2s;
+        }
+        .buy-link:hover {
+            background: #2563eb;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #eef2ff;
+            font-weight: 700;
+            width: 150px;
+        }
+        .highlight {
+            background-color: #fef9c3;
+        }
+        h2 {
+            border-left: 5px solid #3b82f6;
+            padding-left: 1rem;
+            margin: 1.5rem 0 1rem 0;
+            color: #0f172a;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        footer a {
+            color: #2563eb;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+        }
+        mark {
+            background-color: #fef9c3;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Công Nghệ - Phúc An Shop</h1>
+        <nav>
+            <a href="#featured">Sản phẩm nổi bật</a>
+            <a href="#comparison">So sánh sản phẩm</a>
+            <a href="#footer-links">Hỗ trợ</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Sản phẩm nổi bật -->
+        <section id="featured">
+            <h2>⭐ Sản phẩm nổi bật</h2>
+            <div class="products-grid">
+                <!-- Sản phẩm 1 -->
+                <article>
+                    <figure>
+                        <img src="https://placehold.co/300x200?text=Laptop+Gaming&font=roboto" alt="Laptop Gaming cao cấp">
+                        <figcaption>Laptop Gaming</figcaption>
+                    </figure>
+                    <h3>Laptop Gaming X9 Pro</h3>
+                    <p>CPU Intel Core i9, RTX 4080, RAM 32GB, SSD 1TB. Màn hình 165Hz.</p>
+                    <div class="price"><mark>Giá chỉ:</mark> <strong>32.990.000đ</strong></div>
+                    <a href="#" class="buy-link">Mua ngay →</a>
+                </article>
+
+                <!-- Sản phẩm 2 -->
+                <article>
+                    <figure>
+                        <img src="https://placehold.co/300x200?text=Smartphone+5G&font=roboto" alt="Điện thoại thông minh 5G">
+                        <figcaption>Smartphone 5G</figcaption>
+                    </figure>
+                    <h3>Phone Ultra 6G</h3>
+                    <p>Màn hình 6.7", Chip Snapdragon 8 Gen 3, Pin 5000mAh, Camera 200MP.</p>
+                    <div class="price"><mark>Giá chỉ:</mark> <strong>15.490.000đ</strong></div>
+                    <a href="#" class="buy-link">Mua ngay →</a>
+                </article>
+
+                <!-- Sản phẩm 3 -->
+                <article>
+                    <figure>
+                        <img src="https://placehold.co/300x200?text=Wireless+Earbuds&font=roboto" alt="Tai nghe True Wireless">
+                        <figcaption>Tai nghe không dây</figcaption>
+                    </figure>
+                    <h3>AirBuds Pro 5</h3>
+                    <p>Chống ồn chủ động, âm thanh Hi-Res, thời lượng pin 30 giờ.</p>
+                    <div class="price"><mark>Giá chỉ:</mark> <strong>2.290.000đ</strong></div>
+                    <a href="#" class="buy-link">Mua ngay →</a>
+                </article>
+
+                <!-- Sản phẩm 4 -->
+                <article>
+                    <figure>
+                        <img src="https://placehold.co/300x200?text=Smartwatch&font=roboto" alt="Đồng hồ thông minh">
+                        <figcaption>Smartwatch thể thao</figcaption>
+                    </figure>
+                    <h3>Watch Active 4</h3>
+                    <p>GPS, đo nhịp tim, SpO2, chống nước 5ATM, pin 14 ngày.</p>
+                    <div class="price"><mark>Giá chỉ:</mark> <strong>3.990.000đ</strong></div>
+                    <a href="#" class="buy-link">Mua ngay →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: Bảng so sánh (có colspan và rowspan) -->
+        <section id="comparison">
+            <h2>So sánh 3 dòng điện thoại nổi bật</h2>
+            <table>
+                <!-- Tiêu đề cột có dùng colspan -->
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th colspan="3">Các mẫu điện thoại</th>
+                    </tr>
+                    <tr>
+                        <th>Chi tiết</th>
+                        <th>iPhone 16 Pro</th>
+                        <th>Samsung Galaxy S25 Ultra</th>
+                        <th>Xiaomi 15 Pro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Màn hình</th>
+                        <td>6.3" OLED 120Hz</td>
+                        <td>6.9" Dynamic AMOLED 120Hz</td>
+                        <td>6.73" AMOLED 120Hz</td>
+                    </tr>
+                    <tr>
+                        <th>Chip xử lý</th>
+                        <td>A18 Pro</td>
+                        <td>Snapdragon 8 Gen 4</td>
+                        <td>Dimensity 9400</td>
+                    </tr>
+                    <tr>
+                        <th>RAM / ROM</th>
+                        <td>8GB / 256GB</td>
+                        <td>12GB / 512GB</td>
+                        <td>16GB / 512GB</td>
+                    </tr>
+                    <tr>
+                        <th>Camera chính</th>
+                        <td>48MP + 12MP</td>
+                        <td>200MP + 50MP + 50MP</td>
+                        <td>50MP + 50MP + 50MP</td>
+                    </tr>
+                    <tr>
+                        <!-- Dùng rowspan cho ô "Pin & Sạc" -->
+                        <th rowspan="2">Pin & Sạc</th>
+                        <td>3600mAh, 25W</td>
+                        <td>5000mAh, 45W</td>
+                        <td>5200mAh, 90W</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Sạc không dây: Có (cả 3 máy)</td>
+                        <td>Sạc ngược 10W</td>
+                    </tr>
+                    <tr>
+                        <th>Giá tham khảo</th>
+                        <td><strong>29.990.000đ</strong></td>
+                        <td><strong>28.990.000đ</strong></td>
+                        <td><strong>17.990.000đ</strong></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Lưu ý: Giá có thể thay đổi theo chương trình khuyến mãi.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer id="footer-links">
+        <p>
+            <a href="#">Chính sách bảo hành</a> |
+            <a href="#">Liên hệ (Hotline: 1900 1234)</a> |
+            <a href="#">FAQ - Hỏi đáp nhanh</a>
+        </p>
+        <hr>
+        <p>&copy; 2026 Nguyễn Vũ Phúc An — Trang sản phẩm E-Commerce demo. Hình ảnh chỉ mang tính minh họa.</p>
+        <p>Email hỗ trợ: <a href="mailto:support@phucan.shop">support@phucan.shop</a></p>
+    </footer>
+</body>
+</html>
