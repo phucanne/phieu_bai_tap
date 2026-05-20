@@ -1,0 +1,148 @@
+/* =========================
+   MOBILE FIRST (DEFAULT)
+========================= */
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #222;
+  color: white;
+}
+
+.nav {
+  display: none; /* mobile ẩn menu */
+}
+
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* LAYOUT */
+.layout {
+  display: block;
+}
+
+/* SIDEBAR ẩn mobile */
+.sidebar {
+  display: none;
+}
+
+/* ADS ẩn mobile */
+.ads {
+  display: none;
+}
+
+/* PRODUCTS GRID - mobile 1 cột */
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+/* CARD */
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+}
+
+/* =========================
+   TABLET ≥ 768px
+========================= */
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* NAV vẫn ẩn hamburger */
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* SIDEBAR hiện lại */
+  .sidebar {
+    display: block;
+    padding: 12px;
+    background: #f4f4f4;
+  }
+
+  /* ADS vẫn ẩn */
+  .ads {
+    display: none;
+  }
+
+  /* GRID 2 cột */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* layout chia khối */
+  .layout {
+    display: block;
+  }
+}
+
+/* =========================
+   DESKTOP ≥ 1024px
+========================= */
+
+@media (min-width: 1024px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  /* layout 3 cột */
+  .layout {
+    display: grid;
+    grid-template-columns: 200px 1fr 150px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* sidebar + ads hiện */
+  .sidebar {
+    display: block;
+  }
+
+  .ads {
+    display: block;
+    background: #f9f9f9;
+    padding: 10px;
+  }
+
+  /* GRID 4 cột */
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
